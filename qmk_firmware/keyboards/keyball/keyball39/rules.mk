@@ -14,7 +14,7 @@ CONSOLE_ENABLE = no         # Console for debug
 COMMAND_ENABLE = no         # Commands for debug and configuration
 NKRO_ENABLE = no            # Enable N-Key Rollover
 BACKLIGHT_ENABLE = no       # Enable keyboard backlight functionality
-AUDIO_ENABLE = no           # Audio output
+AUDIO_ENABLE = yes         # Audio output
 
 # Keyball39 is split keyboard.
 SPLIT_KEYBOARD = yes
@@ -26,7 +26,7 @@ SRC += drivers/pmw3360/pmw3360.c
 QUANTUM_LIB_SRC += spi_master.c # Optical sensor use SPI to communicate
 
 # This is unnecessary for processing KC_MS_BTN*.
-MOUSEKEY_ENABLE = no
+MOUSEKEY_ENABLE = yes
 
 # Enabled only one of RGBLIGHT and RGB_MATRIX if necessary.
 RGBLIGHT_ENABLE = no        # Enable RGBLIGHT
@@ -44,6 +44,6 @@ SRC += lib/oledkit/oledkit.c    # OLED utility for Keyball series.
 SRC += lib/keyball/keyball.c
 
 # Disable other features to squeeze firmware size
-SPACE_CADET_ENABLE = no
-GRAVE_ESC_ENABLE = no
-MAGIC_ENABLE = no
+SPACE_CADET_ENABLE = yes
+GRAVE_ESC_ENABLE = yes
+MAGIC_ENABLE = yes
